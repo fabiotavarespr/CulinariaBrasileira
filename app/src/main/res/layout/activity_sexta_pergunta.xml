@@ -12,7 +12,7 @@
 
         <TextView
             android:id="@+id/pergunta"
-            style="@style/text"/>
+            style="@style/text" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -28,45 +28,50 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:layout_height="match_parent">
 
-                <CheckBox
-                    android:id="@+id/opcaoA"
-                    style="@style/text"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:onClick="onCheckBoxClick"
-                    android:text="@string/opcaoA" />
-                <CheckBox
-                    android:id="@+id/opcaoB"
-                    style="@style/text"
-                    android:gravity="center"
-                    android:onClick="onCheckBoxClick"
-                    android:text="@string/opcaoB" />
-                <CheckBox
-                    android:id="@+id/opcaoC"
-                    style="@style/text"
-                    android:gravity="center"
-                    android:onClick="onCheckBoxClick"
-                    android:text="@string/opcaoC" />
-                <CheckBox
-                    android:id="@+id/opcaoD"
-                    style="@style/text"
-                    android:gravity="center"
-                    android:onClick="onCheckBoxClick"
-                    android:text="@string/opcaoD" />
-                <CheckBox
-                    android:id="@+id/opcaoE"
-                    style="@style/text"
-                    android:gravity="center"
-                    android:onClick="onCheckBoxClick"
-                    android:text="@string/opcaoE" />
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/opcaoA"
+                        style="@style/text"
+                        android:gravity="center"
+                        android:onClick="onCheckBoxClick"/>
+
+                    <CheckBox
+                        android:id="@+id/opcaoB"
+                        style="@style/text"
+                        android:gravity="center"
+                        android:onClick="onCheckBoxClick"/>
+
+                    <CheckBox
+                        android:id="@+id/opcaoC"
+                        style="@style/text"
+                        android:gravity="center"
+                        android:onClick="onCheckBoxClick"/>
+
+                    <CheckBox
+                        android:id="@+id/opcaoD"
+                        style="@style/text"
+                        android:gravity="center"
+                        android:onClick="onCheckBoxClick"/>
+
+                    <CheckBox
+                        android:id="@+id/opcaoE"
+                        style="@style/text"
+                        android:gravity="center"
+                        android:onClick="onCheckBoxClick"/>
 
 
-            </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
 
         </LinearLayout>
     </RelativeLayout>

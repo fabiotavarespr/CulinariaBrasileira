@@ -28,53 +28,52 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:layout_height="match_parent">
 
-                <RadioGroup
-                    android:id="@+id/grupoOpcao"
-                    android:layout_width="fill_parent"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
-                    <RadioButton
-                        android:id="@+id/opcaoA"
-                        style="@style/text"
-                        android:onClick="onRadioButtonClicked"
-                        android:text="@string/opcaoA" />
+                    <RadioGroup
+                        android:id="@+id/grupoOpcao"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/opcaoB"
-                        style="@style/text"
-                        android:onClick="onRadioButtonClicked"
-                        android:text="@string/opcaoB" />
+                        <RadioButton
+                            android:id="@+id/opcaoA"
+                            style="@style/text"
+                            android:onClick="onRadioButtonClicked"/>
 
-                    <RadioButton
-                        android:id="@+id/opcaoC"
-                        style="@style/text"
-                        android:onClick="onRadioButtonClicked"
-                        android:text="@string/opcaoC" />
+                        <RadioButton
+                            android:id="@+id/opcaoB"
+                            style="@style/text"
+                            android:onClick="onRadioButtonClicked"/>
 
-                    <RadioButton
-                        android:id="@+id/opcaoD"
-                        style="@style/text"
-                        android:onClick="onRadioButtonClicked"
-                        android:text="@string/opcaoD" />
+                        <RadioButton
+                            android:id="@+id/opcaoC"
+                            style="@style/text"
+                            android:onClick="onRadioButtonClicked"/>
 
-                    <RadioButton
-                        android:id="@+id/opcaoE"
-                        style="@style/text"
-                        android:onClick="onRadioButtonClicked"
-                        android:text="@string/opcaoE" />
-                </RadioGroup>
+                        <RadioButton
+                            android:id="@+id/opcaoD"
+                            style="@style/text"
+                            android:onClick="onRadioButtonClicked" />
+
+                        <RadioButton
+                            android:id="@+id/opcaoE"
+                            style="@style/text"
+                            android:onClick="onRadioButtonClicked" />
+                    </RadioGroup>
 
 
-            </LinearLayout>
-
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
     </RelativeLayout>
 

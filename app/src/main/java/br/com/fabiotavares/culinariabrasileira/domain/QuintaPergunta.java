@@ -6,7 +6,7 @@ public class QuintaPergunta  implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String pergunta = "A Caipirinha é uma das bebidas brasileiras mais conhecidas nacionalmente e internacionalmente. A Caipirinha tem origem de qual estado brasileiro?";
-    private String opcaoA = "Acre";
+    private String opcaoA = "Rio de Janeiro";
     private String opcaoB = "Pernambuco";
     private String opcaoC = "Espírito Santo";
     private String opcaoD = "São Paulo";

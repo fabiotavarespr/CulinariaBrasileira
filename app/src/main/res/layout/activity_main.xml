@@ -16,25 +16,26 @@
         android:layout_centerVertical="true"
         android:orientation="vertical">
 
+
         <TextView
             style="@style/inical"
-            android:text="@string/tela_inicial"
-             />
+            android:text="@string/tela_inicial" />
 
         <EditText
             android:id="@+id/nome_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:gravity="center"
-            android:hint="@string/digite_seu_nome"
-            android:layout_margin="10dp" />
+            android:hint="@string/digite_seu_nome" />
 
         <Button
             android:id="@+id/iniciar"
+            style="@style/button_iniciar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/iniciar_pedido"
-            style="@style/button_iniciar"/>
+            android:text="@string/iniciar_pedido" />
+
 
     </LinearLayout>
 
