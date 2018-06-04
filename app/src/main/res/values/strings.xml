@@ -1,0 +1,29 @@
+<resources>
+    <!-- TELA INICIAL -->
+    <string name="app_name">Culinária Brasileira</string>s
+    <string name="tela_inicial">Iniciar o Quiz Culinária Brasileira</string>
+    <string name="iniciar_pedido">Iniciar o Quiz</string>
+    <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="digite_sua_resposta">Digite sua resposta</string>
+
+    <string name="toast_digite_nome">Por favor, digite seu nome!</string>
+    <string name="toast_escolha_opcao">Escolha alguma das opções!</string>
+    <string name="toast_resposta_branco">Preencha alguma resposta!</string>
+
+
+    <string name="footer_proximo">Próximo</string>
+    <string name="footer_retornar">Retornar</string>
+    <string name="footer_refazer">Refazer o teste</string>
+
+    <string name="pergunta">Pergunta</string>
+    <string name="resposta">Resposta</string>
+    <string name="resultado">Resultado</string>
+
+    <string name="opcaoA">Opção A</string>
+    <string name="opcaoB">Opção B</string>
+    <string name="opcaoC">Opção C</string>
+    <string name="opcaoD">Opção D</string>
+    <string name="opcaoE">Opção E</string>
+
+
+</resources>

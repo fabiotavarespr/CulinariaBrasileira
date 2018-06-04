@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuintaPerguntaActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        style="@style/header">
+
+        <TextView
+            android:id="@+id/pergunta"
+            style="@style/text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/footer"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/grupoOpcao"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/opcaoA"
+                        style="@style/text"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/opcaoA" />
+
+                    <RadioButton
+                        android:id="@+id/opcaoB"
+                        style="@style/text"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/opcaoB" />
+
+                    <RadioButton
+                        android:id="@+id/opcaoC"
+                        style="@style/text"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/opcaoC" />
+                    <RadioButton
+                        android:id="@+id/opcaoD"
+                        style="@style/text"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/opcaoD" />
+                    <RadioButton
+                        android:id="@+id/opcaoE"
+                        style="@style/text"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/opcaoE" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/retornar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/footer_retornar"
+                style="@style/footer"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/proximo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/footer_proximo"
+                style="@style/footer"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

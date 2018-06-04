@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SextaPerguntaActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        style="@style/header">
+
+        <TextView
+            android:id="@+id/pergunta"
+            style="@style/text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/opcaoA"
+                    style="@style/text"
+                    android:gravity="center"
+                    android:onClick="onCheckBoxClick"
+                    android:text="@string/opcaoA" />
+                <CheckBox
+                    android:id="@+id/opcaoB"
+                    style="@style/text"
+                    android:gravity="center"
+                    android:onClick="onCheckBoxClick"
+                    android:text="@string/opcaoB" />
+                <CheckBox
+                    android:id="@+id/opcaoC"
+                    style="@style/text"
+                    android:gravity="center"
+                    android:onClick="onCheckBoxClick"
+                    android:text="@string/opcaoC" />
+                <CheckBox
+                    android:id="@+id/opcaoD"
+                    style="@style/text"
+                    android:gravity="center"
+                    android:onClick="onCheckBoxClick"
+                    android:text="@string/opcaoD" />
+                <CheckBox
+                    android:id="@+id/opcaoE"
+                    style="@style/text"
+                    android:gravity="center"
+                    android:onClick="onCheckBoxClick"
+                    android:text="@string/opcaoE" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/retornar"
+                style="@style/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/footer_retornar" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/proximo"
+                style="@style/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/footer_proximo" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
